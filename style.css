@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border-width: 0;
+}
+
+.container-squares {
+    border-style: solid;
+    width: 480px;
+    height: 480px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    background-color: rgb(223, 76, 100);
+    border-style: solid;
+    flex: 1 1 0;
+    min-width: 30px;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 1px;
+}
+
+/* .square:hover {
+    background-color: rgb(252, 216, 151);
+} */
+
+.change-color {
+    background-color: rgb(187, 239, 248);
+}
