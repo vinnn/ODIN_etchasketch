@@ -33,7 +33,11 @@ function newSnake() {
     // - Calculate the size of each square (in pix)
     // - Calculate the total number of squares to be 
     // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    let nb_squares_per_side = prompt("Please enter the number of squares per side", 16);
+    let nb_squares_per_side = prompt("Please enter the number of squares per side (max 100)", 16);
+
+    if (nb_squares_per_side > 100) {
+        return;
+    }
 
     side_px = (640 / nb_squares_per_side);
     console.log(side_px);
